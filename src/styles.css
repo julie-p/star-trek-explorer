@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@font-face {
+    font-family: 'NEOTERIQUE';
+    src:url('./assets/webfonts_NEOTERIQUE/NEOTERIQUE.ttf.woff') format('woff'),
+        url('./assets/webfonts_NEOTERIQUE/NEOTERIQUE.ttf.svg#NEOTERIQUE') format('svg'),
+        url('./assets/webfonts_NEOTERIQUE/NEOTERIQUE.ttf.eot'),
+        url('./assets/webfonts_NEOTERIQUE/NEOTERIQUE.ttf.eot?#iefix') format('embedded-opentype'); 
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*Basic reset*/
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --accent-color-orange : #f67c73;
+    --accent-color-green: #47ccaf;
+    --accent-color-green-opacity: #47cfb2a4;
+    --main-text-color: #484848;
+    --white-color: #fff;
+    --background-color: #f1dcbed3;
+}
+
+/* Reusables */
+body {
+    font-size: 10px;
+    font-family: 'Roboto';
+    color: var(--main-text-color);
+    background-color: var(--background-color);
+} 
+
+section {
+    padding: 7rem 0;
+}
+
+.container {
+    width: 85%;
+    max-width: 65rem;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}

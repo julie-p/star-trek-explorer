@@ -1,0 +1,83 @@
+.detail-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-container {
+    margin: 2rem 5rem;
+}
+
+.detail-info {
+    width: 50%;
+}
+
+.detail-info h1 {
+    font-size: 1.5rem;
+    font-family: 'NEOTERIQUE';
+    margin-bottom: 1rem;
+}
+
+.detail-info h2 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.detail-info h3 {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.detail-info p {
+    font-size: .8rem;
+    letter-spacing: .8px;
+}
+
+.btn-detail {
+    margin-top: 4rem;
+}
+
+.btn-detail a {
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #fff;
+    background-color: var(--accent-color-green);
+    border: 1px solid transparent;
+    border-radius: 4px;
+    padding: 20px 40px;
+    transition: all .5s ease-in-out 0s;
+}
+
+.btn-detail a:hover {
+    background-color: var(--accent-color-green-opacity);
+}
+
+.detail-link {
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    color: var(--main-text-color);
+}
+
+@media only screen and (max-width: 900px) {
+    .detail-container {
+        display: initial;
+        text-align: center; 
+    }
+
+    .img-container {
+        margin: 0
+    }
+
+    .img-container img {
+        width: 80%;
+        margin-top: 2rem;
+    }
+
+    .detail-info {
+        width: 80%;
+        margin: 2rem auto;
+    }
+}
