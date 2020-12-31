@@ -31,6 +31,7 @@
 .detail-info p {
     font-size: .8rem;
     letter-spacing: .8px;
+    line-height: 20px;
 }
 
 .btn-detail {
@@ -51,6 +52,10 @@
 
 .btn-detail a:hover {
     background-color: var(--accent-color-green-opacity);
+} 
+
+.btn-detail .icon-back {
+    margin-right: .6rem;
 }
 
 .detail-link {

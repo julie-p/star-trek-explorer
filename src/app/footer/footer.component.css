@@ -1,7 +1,7 @@
 footer {
     width: 100%;
-    height: 3rem;
-    border-top: 2px solid var(--accent-color-orange);
+    height: 3.5rem;
+    border-top: 2px solid var(--white-color);
     text-align: center;
     display: flex;
     align-items: center;
@@ -12,6 +12,10 @@ footer h3 {
     font-weight: 400;
     font-size: 1rem;
     margin-left: 5rem;
+}
+
+footer h3 span {
+    color: #ff0000;
 }
 
 footer h3 a {

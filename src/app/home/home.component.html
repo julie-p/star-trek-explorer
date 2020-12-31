@@ -4,25 +4,38 @@
     <div class="hero-txt">
         <h1 class="hero-title">Your number one resource<br>For your vintage <em>star trek</em> nights.</h1>
     </div>
-    <div class="btn-hero">
+    <div class="btn-hero btn">
         <a href="">Explore now</a>
     </div>
 </header>
 
-<section class="movie-section" id="movie-section">
-    <div *ngFor="let item of data" class="box container" id={{item.uid}}>
-        <div class="box-img">
-            <img src="../../assets/affiches/vintage-6.jfif" alt="{{item.uid}}">
-        </div>
-        <div class="content">
-            <h3>{{item.series.title | uppercase}}</h3>
-            <p>" {{item.title}} "</p>
-            <p>{{item.season.title}},</p>
-            <p>Episode {{item.episodeNumber}}</p>
-        </div>
+<section>
+    <div class="search-filter">
+        <fa-icon [icon]="faSearch" class="search-icon"></fa-icon>
+        <input 
+        class="search-input"
+        type="text" 
+        name="search-input"
+        placeholder="Search for an Episode Name..."
+        autoComplete="off"
+        [(ngModel)]="searchFilter"
+        />
+    </div>
+    <div class="movie-section" id="movie-section">
+        <div *ngFor="let item of titles" class="box" id={{item.uid}}>
+            <div class="box-img">
+                <img src="../../assets/affiches/vintage-6.jfif" alt="{{item.uid}}">
+            </div>
+            <div class="content">
+                <h3>{{item.series.title | uppercase}}</h3>
+                <p>" {{item.title}} "</p>
+                <p>{{item.season.title}},</p>
+                <p>Episode {{item.episodeNumber}}</p>
+            </div>
 
-        <div class="btn">
-            <a routerLink="/episodes-details/{{item.uid}}" class="btn-details">View Details</a>
+            <div class="btn">
+                <a routerLink="/episodes-details/{{item.uid}}" class="btn-details">View Details</a>
+            </div>
         </div>
     </div>
 </section>
