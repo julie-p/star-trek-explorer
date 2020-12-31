@@ -10,9 +10,13 @@ import { faSearch } from '@fortawesome/free-solid-svg-icons';
 export class HomeComponent implements OnInit {
 
   faSearch = faSearch;
-  searchFilter: string;
+
   data: Array<any>;
 
+  searchFilter?: string;
+
+  seasonFilter?: string;
+  
   constructor(private api: ApiService) { 
     this.api.getData().subscribe(data => {
       this.data = data.episodes;
@@ -22,8 +26,8 @@ export class HomeComponent implements OnInit {
   get titles() {
     return this.data ? this.data.filter(episode => 
       this.searchFilter 
-      ? episode.title.
-        toLowerCase()
+      ? episode.title
+        .toLowerCase()
         .includes(this.searchFilter.toLowerCase())
       : episode
       )
