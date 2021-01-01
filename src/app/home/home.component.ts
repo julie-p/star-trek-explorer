@@ -14,8 +14,6 @@ export class HomeComponent implements OnInit {
   data: Array<any>;
 
   searchFilter?: string;
-
-  seasonFilter?: string;
   
   constructor(private api: ApiService) { 
     this.api.getData().subscribe(data => {
