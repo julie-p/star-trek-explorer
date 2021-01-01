@@ -34,6 +34,10 @@ export class HomeComponent implements OnInit {
       : this.data;
   }
 
+  toEpisodeSection() {
+    document.getElementById('episode-section').scrollIntoView({behavior: 'smooth'});
+  }
+
   ngOnInit(): void {
   }
 }

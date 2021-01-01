@@ -5,7 +5,7 @@
         <h1 class="hero-title">Your number one resource<br>For your vintage <em>star trek</em> nights.</h1>
     </div>
     <div class="btn-hero btn">
-        <a href="">Explore now</a>
+        <button (click)="toEpisodeSection()">Explore now</button>
     </div>
 </header>
 
@@ -21,7 +21,7 @@
         [(ngModel)]="searchFilter"
         />
     </div>
-    <div class="movie-section">
+    <div class="episode-section" id="episode-section">
         <div *ngFor="let item of titles" class="box" id={{item.uid}}>
             <div class="box-img">
                 <img src="../../assets/affiches/vintage-6.jfif" alt="{{item.uid}}">
