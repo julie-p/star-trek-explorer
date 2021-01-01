@@ -44,7 +44,7 @@
     display: flex;
 }
 
-.btn-hero a {
+.btn-hero button {
     text-transform: uppercase;
     font-size: 1rem;
     font-weight: 600;
@@ -53,10 +53,12 @@
     border: 1px solid transparent;
     border-radius: 4px;
     padding: 20px 40px;
+    cursor: pointer;
+    outline: none;
     transition: all .5s ease-in-out 0s;
 }
 
-.btn-hero a:hover {
+.btn-hero button:hover {
     background-color: var(--accent-color-green-opacity);
 }
 

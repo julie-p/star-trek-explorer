@@ -34,6 +34,10 @@ export class HomeComponent implements OnInit {
       : this.data;
   }
 
+  toMovieSection() {
+    document.getElementById('movie-section').scrollIntoView({behavior: 'smooth'});
+  }
+
   ngOnInit(): void {
   }
 }
