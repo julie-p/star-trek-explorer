@@ -107,8 +107,8 @@
     outline: none;
 }
 
-/* Movie container */
-.movie-section {
+/* Episode container */
+.episode-section {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
