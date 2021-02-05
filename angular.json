@@ -120,5 +120,8 @@
       }
     }
   },
-  "defaultProject": "star-trek-app"
+  "defaultProject": "star-trek-app",
+  "cli": {
+    "analytics": false
+  }
 }
