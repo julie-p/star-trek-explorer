@@ -34,7 +34,7 @@ export class HomeComponent implements OnInit {
       : this.data;
   }
 
-  toEpisodeSection() {
+  goToEpisodeSection() {
     document.getElementById('episode-section').scrollIntoView({behavior: 'smooth'});
   }
 }
