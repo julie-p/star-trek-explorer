@@ -24,15 +24,12 @@
     
     <div class="episode-section">
         <div *ngFor="let item of titles" class="box" id={{item.uid}}>
-            <!-- <div class="box-img">
-                <img src="../../assets/affiches/vintage-6.jfif" alt="{{item.uid}}">
-            </div> -->
             <div class="content">
                 <h3>{{item.series.title | uppercase}}</h3>
                 <p>" {{item.title}} "</p>
                 <p>{{item.season.title}},</p>
-                <p>Episode {{item.episodeNumber}}</p>
-                <p>uid: {{item.uid}}</p>
+                <p>Episode {{item.episodeNumber}},</p>
+                <p>uid : {{item.uid}}</p>
             </div>
 
             <div class="btn">
