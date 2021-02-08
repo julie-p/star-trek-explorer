@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ApiService } from '../api.service';
+import { ApiService } from '../../api.service';
 import { ActivatedRoute } from '@angular/router';
 import { faLongArrowAltLeft } from '@fortawesome/free-solid-svg-icons';
 
@@ -20,6 +20,6 @@ export class EpisodesDetailsComponent implements OnInit {
       this.data = data.episode;
     })
   }
-  ngOnInit(): void {
-  }
+
+  ngOnInit(): void {}
 }

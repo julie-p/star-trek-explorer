@@ -5,7 +5,7 @@
     text-align: left;
     text-transform: uppercase;
     color: var(--white-color);
-    background: url(../../assets/wallpaper.jpg), radial-gradient(rgba(130, 96, 146, 0.856), #eee);
+    background: url(../../../assets/wallpaper.jpg), radial-gradient(rgba(130, 96, 146, 0.856), #eee);
     background-blend-mode: multiply;
     background-attachment: fixed;
     background-size: cover;
@@ -128,41 +128,16 @@
     box-shadow: 1px 2px 10px 5px solid #000;
 }
 
-.box .box-img {
-    transform: rotateY(0);
-    transition: all .5s ease-in-out 0s;
-}
-
-.box:hover .box-img {
-    transform: rotateY(-90deg);
-}
-
-.box .box-img img {
-    width: 250px;
-    height: 380px;
-    border: 2px solid var(--white-color);
-    border-radius: 10px;
-}
-
 .box .content {
     color: var(--main-text-color);
     background: #e2e4dea1;
-    top: 0;
-    left: 0;
     width: 100%;
     height: 100%;
-    position: absolute;
     padding: 90px 20px;
     box-sizing: border-box;
     text-align: center;
     border-radius: 10px;
     border: 2px solid var(--white-color);
-    transform: rotateY(90deg);
-    transition: all .5s ease-in-out 0s;
-}
-
-.box:hover .content {
-    transform: rotateY(0);
 }
 
 .box .content h3 {
@@ -186,17 +161,12 @@
     height: 100%;
     position: absolute;
     padding: 260px 50px;
-    margin-top: 2rem;
+    margin-top: 4rem;
     box-sizing: border-box;
     text-align: center;
     align-items: center;
-    transform: rotateY(90deg);
-    transition: all .5s ease-in-out 0s;
 }
 
-.box:hover .btn {
-    transform: rotateY(0);
-}
 
 .box .btn a {
     color: var(--white-color);

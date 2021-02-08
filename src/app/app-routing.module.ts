@@ -1,17 +1,17 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-import { HomeComponent } from './home/home.component';
-import { EpisodesDetailsComponent } from './episodes-details/episodes-details.component';
+import { HomeComponent } from './Pages/home/home.component';
+import { EpisodesDetailsComponent } from './Pages/episodes-details/episodes-details.component';
 
 const routes: Routes = [
   {
     path: '', 
-    redirectTo: '/home',
+    redirectTo: '/explore',
     pathMatch: 'full'
   },
   {
-    path: 'home', component: HomeComponent
+    path: 'explore', component: HomeComponent
   },
   {
     path: 'episodes-details/:uid', component: EpisodesDetailsComponent

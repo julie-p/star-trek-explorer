@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ApiService } from '../api.service';
+import { ApiService } from '../../api.service';
 import { faSearch } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
@@ -21,6 +21,8 @@ export class HomeComponent implements OnInit {
     })
   }
 
+  ngOnInit(): void {}
+
   get titles() {
     return this.data ? this.data.filter(episode => 
       this.searchFilter 
@@ -34,8 +36,5 @@ export class HomeComponent implements OnInit {
 
   toEpisodeSection() {
     document.getElementById('episode-section').scrollIntoView({behavior: 'smooth'});
-  }
-
-  ngOnInit(): void {
   }
 }
